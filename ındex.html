@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Tarayıcıya sayfanın adını söylüyoruz -->
+    <title>Mercedes AutoTami</title>
+
+    <!-- CSS dosyasını buraya bağlıyoruz
+         Böylece sayfa güzel görünüyor -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== ÜST MENÜ ===== -->
+<header>
+    <!-- Logo ve site ismi -->
+    <div class="logo">
+        <!-- Mercedes logosu resmi -->
+        <img src="logo.png">
+        <!-- Site adı -->
+        <h1>Mercedes AutoTami</h1>
+    </div>
+
+    <!-- Menü linkleri -->
+    <nav>
+        <!-- Sayfada gezinmemizi sağlar -->
+        <a href="#">Ana Sayfa</a>
+        <a href="#about">Hakkımızda</a>
+        <a href="#services-section">Hizmetlerimiz</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">İletişim</a>
+    </nav>
+</header>
+
+<!-- ===== BÜYÜK ARKA PLANLI ALAN ===== -->
+<section class="hero">
+    <!-- Büyük yazı -->
+    <h2>Mercedes Araçlarınıza Özel Servis</h2>
+    <!-- Küçük açıklama -->
+    <p>Güvenli • Profesyonel • Kaliteli</p>
+</section>
+
+<!-- ===== HAKKIMIZDA ===== -->
+<section id="about" class="about">
+    <h2>Hakkımızda</h2>
+
+    <!-- Görünmeyen kutu
+         Butona basınca açılır -->
+    <input type="checkbox" id="aboutToggle">
+    <!-- <input type="checkbox">
+ Bu gizli bir kutu ☑️
+ Ama biz onu buton gibi kullanıyoruz -->
+
+    <!-- Bu yazı buton gibi görünür -->
+    <label for="aboutToggle">
+        Hizmet Alanlarımızı Göster
+    </label>
+
+    <!-- Açılıp kapanan alan -->
+    <div class="services">
+        <div>🔧 Motor Onarımı</div>
+        <div>🚗 Fren Sistemleri</div>
+        <div>🛞 Lastik ve Jant</div>
+        <div>💻 Elektronik Arıza</div>
+    </div>
+</section>
+
+<!-- ===== HİZMETLER VE FİYATLAR ===== -->
+<section id="services-section" class="services-section">
+    <h2>Hizmetlerimiz</h2>
+
+    <!-- Fiyatları açmak için gizli kutu -->
+    <input type="checkbox" id="priceToggle">
+
+    <!-- Fiyatları gösteren buton -->
+    <label for="priceToggle" class="price-btn">
+        Hizmet ve Fiyatları Göster
+    </label>
+
+    <!-- Fiyat listesi -->
+    <div class="price-list">
+
+        <!-- Tek bir hizmet kutusu -->
+        <div class="price-card">
+            <h3>🔧 Motor Temizliği</h3>
+            <p>Motorun içi güzelce temizlenir</p>
+            <span>150.000 ₺</span>
+        </div>
+
+        <div class="price-card">
+            <h3>🚗 Fren Bakımı</h3>
+            <p>Frenler kontrol edilir</p>
+            <span>90.000 ₺</span>
+        </div>
+
+        <div class="price-card">
+            <!-- price-card fiyat kutusu -->
+            <h3>🛞 Lastik Değişimi</h3>
+            <p>Eski lastikler yenisiyle değiştirilir</p>
+            <span>70.000 ₺</span>
+        </div>
+
+        <div class="price-card">
+            <h3>💻 Elektronik Arıza</h3>
+            <p>Bilgisayarla kontrol edilir</p>
+            <span>50.000 ₺</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== GALERİ ===== -->
+<section id="gallery" class="gallery">
+    <h2>Galeri</h2>
+
+    <!-- 4 tane araba resmi -->
+    <div class="images">
+        <img src="siyah araba.jpg" width="50" height="450">
+        <img src="g kasa.png" width="50" height="450">
+        <img src="yener foto - Kopya (2).jpeg" width="50" height="450">
+        <img src="oto tamir 3.jpeg" width="50" height="450">
+    </div>
+</section>
+
+<!-- ===== ALT KISIM ===== -->
+<footer id="contact">
+    <!-- İletişim bilgileri -->
+    <p>📞 0555 555 55 55</p>
+    <p>📍 Mercedes AutoTami - Türkiye</p>
+</footer>
+
+</body>
+</html>

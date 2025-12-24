@@ -1,0 +1,197 @@
+/* HER ŞEYİ SIFIRLIYORUZ
+   Böylece sayfa karışık olmaz */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* margin → Dış boşluk 
+padding → İç boşluk 
+box-sizing → Kutu düzgün olsun  */
+}
+
+/* SAYFA GENELİ */
+body {
+    background: black;      /* Sayfa siyah */
+    color: rgb(126, 102, 102);           /* Yazılar beyaz */
+    font-family: Arial;     /* Okuması kolay yazı */
+}
+
+/* ===== ÜST MENÜ ===== */
+header {
+    display: flex;                  /* Yan yana diz */
+    justify-content: space-between; /* Sağ-sol ayır */
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.9);    /* Şeffaf siyah */
+    /* flex → Yan yana diz 
+space-between → Sağ-sol ayır ↔
+align-items → Ortala */
+}
+
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO RESMİ */
+.logo img {
+    width: 40px;           /* Küçük logo */
+    margin-right: 10px;
+}
+
+/* MENÜ YAZILARI */
+nav a {
+    color: white;
+    text-decoration: none; /* Alt çizgi yok */
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* ÜZERİNE GELİNCE */
+nav a:hover {
+    color: silver;
+    /* üzerine gelinçe renk değiş */
+}
+
+/* ===== BÜYÜK ARKA PLAN ===== */
+.hero {
+    height: 90vh; /* Ekranın çoğunu kapla */
+    background-image: url("https://images.unsplash.com/photo-1493238792000-8113da705763");
+    background-size: cover;     /* Resim alanı doldursun */
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HERO YAZISI */
+.hero h2 {
+    font-size: 40px;
+}
+
+/* HERO AÇIKLAMA */
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ===== HAKKIMIZDA ===== */
+.about {
+    padding: 60px;
+    text-align: center;
+}
+
+/* GİZLİ KUTU */
+#aboutToggle {
+    display: none;
+}
+
+/* BUTON */
+.about label {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: silver;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* BAŞTA KAPALI */
+.services {
+    display: none;
+    margin-top: 20px;
+}
+
+/* AÇILINCA GÖSTER */
+#aboutToggle:checked + label + .services {
+    display: block;
+}
+
+/* HİZMET KUTULARI */
+.services div {
+    background: #222;
+    margin: 10px auto;
+    padding: 15px;
+    width: 220px;
+    border-radius: 5px;
+}
+
+/* ===== HİZMETLER ===== */
+.services-section {
+    padding: 60px;
+    text-align: center;
+}
+
+/* FİYAT KUTUSU GİZLİ */
+#priceToggle {
+    display: none;
+}
+
+/* FİYAT BUTONU */
+.price-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: silver;
+    color: black;
+    cursor: pointer;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* FİYAT LİSTESİ KAPALI */
+.price-list {
+    display: none;
+    margin-top: 30px;
+}
+
+/* AÇILINCA GÖSTER */
+#priceToggle:checked + .price-btn + .price-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* TEK FİYAT KUTUSU */
+.price-card {
+    background: #111;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* FİYAT YAZISI */
+.price-card span {
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    color: silver;
+}
+
+/* ===== GALERİ ===== */
+.gallery {
+    padding: 60px;
+    text-align: center;
+}
+
+/* RESİMLER YAN YANA */
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* RESİMLER */
+.images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ===== ALT KISIM ===== */
+footer {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+}
